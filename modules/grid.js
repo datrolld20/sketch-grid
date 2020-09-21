@@ -1,6 +1,7 @@
 import {resetToMax, size, mode} from './controls.js'
 
 let gridContainer = document.querySelector('#grid-container');
+let hue = 0;
 
 function createGrid() {
     clearGrid();
@@ -36,6 +37,16 @@ function changeColor(e) {
         case 'random-color':
             bgColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
             break;
+
+        case 'rainbow':
+            bgColor = `hsl(${hue}, 100%, 50%)`;
+            if(hue >= 360) {
+                hue = 0;
+            } else {
+                hue += 5;
+            }
+            break;
+            
     }
     element.style['background'] = `${bgColor}`;
     console.log(bgColor);

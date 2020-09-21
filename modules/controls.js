@@ -17,7 +17,7 @@ function updateSize() {
     size = sizeInput.value;
 
     if(size !== '') {
-        sizeDupe.textContent = `x ${size}`;
+        sizeDupe.textContent = ` x ${size}`;
     }
     else {
         sizeDupe.textContent = ``;
@@ -31,7 +31,6 @@ function resetToMax() {
 
 function updateMode() {
     mode = modeSelect.value;
-    console.log(mode);
 }
 
 
