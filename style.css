@@ -40,7 +40,6 @@ input, select, button {
 
 #size-input {
     width: 30px;
-    margin-right: 10px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -53,6 +52,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+#size-dupe {
+    margin-left: 10px;
 }
 
 #go-btn {
