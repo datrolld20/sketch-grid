@@ -10,6 +10,7 @@ let mode;
 // Event listeners for controls
 sizeInput.addEventListener('input', updateSize);
 modeSelect.addEventListener('change', updateMode);
+goBtn.addEventListener('click', updateMode);
 goBtn.addEventListener('click', createGrid);
 
 function updateSize() {
@@ -30,9 +31,14 @@ function resetToMax() {
 
 function updateMode() {
     mode = modeSelect.value;
+    console.log(mode);
 }
 
 
-sizeInput.value='';
+sizeInput.value=16;
+modeSelect.value='black';
+updateSize();
+updateMode();
+createGrid();
 
 export {size, mode, resetToMax}

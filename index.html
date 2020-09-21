@@ -6,15 +6,24 @@
 
 <body>
     <div id="controls">
-        <span>Create a new Grid!</span>
-        <input id="size-input" type="number">
-        <label for="size-input"><span id="size-dupe"></span> Squares (max 250)</label>
-        <select id="mode-select" name="mode-select">
-            <option value="black">Black and White</option>
-            <option calue="random">Random Colors</option>
-        </select>
+        <h2>Create a new Grid!</h2>
+        
 
-        <button id="go-btn">Go</button>
+        <div id="size-box">
+            <input id="size-input" type="number">
+            <label for="size-input"><span id="size-dupe"></span> (max 250)</label>
+        </div>
+
+        <div>
+            <select id="mode-select" name="mode-select">
+                <option value="black">Black and White</option>
+                <option value="random-color">Random Colors</option>
+            </select>
+        </div>
+
+        <div>
+            <button id="go-btn">GO</button>
+        </div>
     </div>
 
     <div id="grid-container" class="grid-container">

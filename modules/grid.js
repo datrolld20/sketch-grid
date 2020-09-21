@@ -33,12 +33,12 @@ function changeColor(e) {
             bgColor = 'black';
             break;
         
-        case 'random':
-            for(let i = 1; i <=6; i++) {
-                
-            }
+        case 'random-color':
+            bgColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            break;
     }
-    element.style['background'] = 'black';
+    element.style['background'] = `${bgColor}`;
+    console.log(bgColor);
 }
 
 export {gridContainer, createGrid, changeColor, clearGrid};

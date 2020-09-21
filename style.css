@@ -1,12 +1,45 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+}
 
+#controls {
+    height: 50px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#controls > * {
+    padding: 0 30px;
+    border-left: 1px solid #e3e3e3;
+    height: 40px;
 
+    display: flex;
+    align-items: center;
+}
 
-#size-input {
-    width: 30px;
+#controls h2{
+    display: inline;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+input, select, button {
+    font-family: monospace;
     height: 30px;
     font-size: 16px;
     text-align: center;
+    border: 3px solid #318;
+    background: #3e3e3e;
+    color: white;
+
+    cursor: pointer;
+}
+
+#size-input {
+    width: 30px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -19,6 +52,19 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+#go-btn {
+    background: #318;
+    box-shadow: none;
+    font-size: 20px;
+    height: 35px;
+    width: 70px;
+
+}
+
+#go-btn:hover {
+    background: #62f;
 }
 
 
